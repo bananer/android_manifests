@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- commented out in https://github.com/LineageOS/android/blob/lineage-18.1/snippets/lineage.xml -->
+    <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" revision="lineage-17.1" />
+    <project path="packages/apps/Exchange" name="LineageOS/android_packages_apps_Exchange" revision="lineage-17.1" />
+    <project path="packages/apps/UnifiedEmail" name="LineageOS/android_packages_apps_UnifiedEmail" revision="lineage-17.1" />
+</manifest>
