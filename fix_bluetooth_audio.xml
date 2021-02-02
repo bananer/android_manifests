@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <extend-project name="LineageOS/android_device_motorola_sdm632-common" revision="118a881f1855822e93269b03d02c6977a4b79770" />
+</manifest>
