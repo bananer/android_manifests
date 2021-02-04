@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-    <project path="device/motorola/river" name="bananer/android_device_motorola_river" remote="github" />
-    <project path="device/motorola/sdm632-common" name="bananer/android_device_motorola_sdm632-common" remote="github" />
-</manifest>
