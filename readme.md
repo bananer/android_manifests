@@ -1,15 +1,16 @@
 ```sh
-git -C /var/lib/docker/volumes/lineageos_local_manifests/_data/ pull
+git -C /root/lineageos/local_manifests/ pull
 ```
 ```sh
-docker run --interactive --tty \
+docker run --interactive --tty --rm \
     -e "BRANCH_NAME=lineage-18.1" \
-    -e "DEVICE_LIST=mako,river" \
+    -e "DEVICE_LIST=river,mako" \
     -e "INCLUDE_PROPRIETARY=false" \
-    -e "LOCAL_MIRROR=true" \
+    -e "LOCAL_MIRROR=false" \
     -e "SIGNATURE_SPOOFING=yes" \
     -e "SIGN_BUILDS=true" \
     -e "CLEAN_AFTER_BUILD=false" \
+    -e "CCACHE_SIZE=50G" \
     -e "RELEASE_TYPE=BANANER" \
     -e "OTA_URL=https://lineageos.nagler.world/api" \
     -e "ZIP_SUBDIR=false" \
@@ -18,9 +19,9 @@ docker run --interactive --tty \
     -v "mainframe_lineageos_zips:/srv/zips" \
     -v "lineageos_logs:/srv/logs" \
     -v "lineageos_ccache:/srv/ccache" \
-    -v "lineageos_mirror:/srv/mirror" \
-    -v "lineageos_keys:/srv/keys" \
-    -v "lineageos_local_manifests:/srv/local_manifests:ro" \
+    -v "/root/lineageos/keys:/srv/keys" \
+    -v "/root/lineageos/local_manifests:/srv/local_manifests:ro" \
+    -v "/root/lineageos/userscripts:/srv/userscripts:ro" \
     --memory="14g" --cpus="3.7" \
     lineageos4microg/docker-lineage-cicd
 ```
