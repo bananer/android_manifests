@@ -14,7 +14,7 @@ docker run --interactive --tty --rm \
     -e "RELEASE_TYPE=BANANER" \
     -e "OTA_URL=https://lineageos.nagler.world/api" \
     -e "ZIP_SUBDIR=false" \
-    -e "CUSTOM_PACKAGES=GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend com.google.android.maps FDroid FDroidPrivilegedExtension additional_repos.xml AuroraServices Apps" \
+    -e "WITH_GMS=true" \
     -v "lineageos_src:/srv/src" \
     -v "mainframe_lineageos_zips:/srv/zips" \
     -v "lineageos_logs:/srv/logs" \
