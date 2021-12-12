@@ -15,6 +15,7 @@ docker run --interactive --tty --rm \
     -e "OTA_URL=https://lineageos.nagler.world/api" \
     -e "ZIP_SUBDIR=false" \
     -e "WITH_GMS=true" \
+    -e "CUSTOM_PACKAGES=AuroraServices Nextcloud" \
     -v "lineageos_src:/srv/src" \
     -v "mainframe_lineageos_zips:/srv/zips" \
     -v "lineageos_logs:/srv/logs" \
