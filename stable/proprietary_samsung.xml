@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
+    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" clone-depth="1" />
 </manifest>

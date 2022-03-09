@@ -2,5 +2,5 @@
 <manifest>
   <project name="voron00/android_device_lge_mako" path="device/lge/mako" remote="github" />
   <project name="voron00/android_kernel_lge_mako" path="kernel/lge/mako" remote="github" />
-  <project name="voron00/proprietary_vendor_lge" path="vendor/lge" remote="github" />
+  <project name="voron00/proprietary_vendor_lge" path="vendor/lge" remote="github" clone-depth="1" />
 </manifest>
