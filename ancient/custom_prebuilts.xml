@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="bananer/android_prebuilts" path="prebuilts/bananer" remote="github" revision="master" clone-depth="1" />
-</manifest>
